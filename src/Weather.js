@@ -56,7 +56,7 @@ export default function Weather() {
         <footer>
           Life in the Clouds
           <br />
-          <a href="https://https://github.com/janine-velveteen/react-weather">
+          <a href="https://github.com/janine-velveteen/react-weather">
             Open-Sourced Code
           </a>
           by Janine Marsh
