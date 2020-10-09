@@ -38,7 +38,7 @@ export default function Weather() {
           </div>
 
           <div className="conditions">
-            <div className="col-6 text-center">
+            <div className="col-6">
               <i className="fas fa-tint"></i>
               <strong>Humidity</strong> <br />
               <div>0%</div>
