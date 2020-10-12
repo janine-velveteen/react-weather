@@ -9,6 +9,7 @@ export default function Weather() {
             type="text"
             placeholder="Search city here"
             autoComplete="off"
+            autoFocus="on"
           />
           <input type="submit" value="Search 🔍" />
           <input type="submit" value="📍" />
@@ -40,10 +41,11 @@ export default function Weather() {
 
           <div className="conditions">
             <div className="col-6">
-              <i className="fas fa-tint"></i>
+              <strong>Sunny</strong>
+              <br />
+              <br />
               <strong>Humidity</strong> <br />
               <div>0%</div>
-              <i className="fas fa-wind"></i>
               <strong>Wind</strong>
               <div>14kmh</div>
             </div>
