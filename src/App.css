@@ -42,7 +42,7 @@ body {
 .current-temp {
   font-size: 75px;
   margin-top: 30px;
-  padding-left: 80px;
+  margin-left: 40px;
   color: #fff;
 }
 
@@ -91,4 +91,8 @@ footer {
 
 .App {
   margin: 20px;
+}
+
+.current-icon {
+  float: left;
 }

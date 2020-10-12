@@ -23,10 +23,11 @@ export default function Weather() {
         <div className="row">
           <div className="col-6 text-center">
             <img
+              className="current-icon"
               src="http://openweathermap.org/img/wn/01d@2x.png"
               alt="Sunny"
-              className="float-left"
             />
+
             <h1 className="current-temp">27°</h1>
 
             <span className="units">
