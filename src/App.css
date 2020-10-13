@@ -33,7 +33,7 @@ body {
 
 .search-bar {
   margin-top: 20px;
-  position: relative;
+  padding-left: 50px;
 }
 
 .current-temp {
