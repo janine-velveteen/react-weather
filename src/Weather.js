@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
-    setTemperature(response.data.main.temp);
+    setWeatherData({
+      temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      city: response.data.name,
+      date: "Tuesday 16:00",
+    });
+
     setReady(true);
   }
 
@@ -26,10 +33,10 @@ export default function Weather() {
           </form>
 
           <h1 className="city" id="city-value">
-            Toronto
+            {weatherData.city}
           </h1>
           <h2 className="day-time">
-            <span>Tuesday 16:00</span>
+            <span>{weatherData.date}</span>
           </h2>
           <div className="row">
             <div className="col-6 text-center">
@@ -39,7 +46,9 @@ export default function Weather() {
                 alt="Sunny"
               />
 
-              <h1 className="current-temp">27°</h1>
+              <h1 className="current-temp">
+                {Math.round(weatherData.temperature)}°
+              </h1>
 
               <span className="units">
                 <a href="/">C</a> | <a href="/">F</a>
@@ -51,13 +60,15 @@ export default function Weather() {
 
             <div className="conditions">
               <div className="col-6">
-                <strong>Sunny</strong>
+                <strong className="text-capitalize">
+                  {weatherData.description}
+                </strong>
                 <br />
                 <br />
                 <strong>Humidity</strong> <br />
-                <div>0%</div>
+                <div>{weatherData.humidity}%</div>
                 <strong>Wind</strong>
-                <div>14kmh</div>
+                <div>{weatherData.wind}kmh</div>
               </div>
             </div>
           </div>
