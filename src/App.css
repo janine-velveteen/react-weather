@@ -52,7 +52,7 @@ body {
   padding: 20px;
   padding-left: 100px;
   font-size: 22px;
-  color: #000;
+  color: #212529;
 }
 
 .five-hours {
@@ -91,9 +91,8 @@ footer {
   margin: 10px;
 }
 
-.current-icon {
-  float: left;
+canvas {
   position: relative;
-  right: -60px;
-  bottom: -10px;
+  right: -70px;
+  bottom: -25px;
 }
