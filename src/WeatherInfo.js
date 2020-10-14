@@ -12,11 +12,7 @@ export default function WeatherInfo(props) {
       </h2>
       <div className="row">
         <div className="col-6 text-center">
-          <img
-            className="current-icon"
-            src="http://openweathermap.org/img/wn/01d@2x.png"
-            alt="Sunny"
-          />
+          <img className="current-icon" src={props.data.iconURL} alt="Sunny" />
 
           <h1 className="current-temp">
             {Math.round(props.data.temperature)}°
