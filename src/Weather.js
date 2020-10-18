@@ -35,6 +35,7 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  
   if (weatherData.ready) {
     return (
       <div className="App">

@@ -40,6 +40,7 @@ body {
   font-size: 75px;
   margin-top: 30px;
   margin-left: 40px;
+
   color: #fff;
 }
 
@@ -66,21 +67,9 @@ body {
   width: 100%;
 }
 
-.github-link {
-  text-align: center;
-}
-
 .units {
   font-size: 20px;
   line-height: 45px;
-}
-
-footer {
-  text-align: center;
-  color: #212529;
-  font-weight: 900;
-  font-family: "Comfortaa", cursive;
-  line-height: 25px;
 }
 
 .App {
