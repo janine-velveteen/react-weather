@@ -4,7 +4,7 @@
   margin: 68px auto;
   background: linear-gradient(-225deg, #7085b6 0%, #87a7d9 50%, #def3f8 100%);
   box-shadow: 0px 0px 15px -6px rgba(4, 0, 31, 0.5);
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Comfortaa", cursive;
 }
 
@@ -55,11 +55,6 @@ body {
   color: #212529;
 }
 
-.five-hours {
-  padding-top: 60px;
-  color: #212529;
-}
-
 .icons {
   font-size: 28px;
   padding-top: 5px;
@@ -85,6 +80,7 @@ footer {
   color: #212529;
   font-weight: 900;
   font-family: "Comfortaa", cursive;
+  line-height: 25px;
 }
 
 .App {
@@ -92,6 +88,5 @@ footer {
 }
 
 .WeatherInfo canvas {
-  right: -100px;
-  bottom: -25px;
+  margin: 10px auto;
 }

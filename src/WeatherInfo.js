@@ -6,7 +6,7 @@ import UnitConversion from "./UnitConversion";
 export default function WeatherInfo(props) {
   return (
     <div>
-      <h1 className="city" id="city-value">
+      <h1 className="city">
         {props.data.city}
       </h1>
       <h2 className="day-time">
@@ -14,6 +14,7 @@ export default function WeatherInfo(props) {
       </h2>
       <div className="row">
         <div className="col-6 text-center">
+          <div className="clearfix">
           <div className="float-left">
             <WeatherIcon code={props.data.icon} />
           </div>
@@ -23,7 +24,8 @@ export default function WeatherInfo(props) {
           <div className="current-hi-low">
             <strong>28°</strong>/<div>21°</div>
           </div>
-        </div>
+          </div>
+          </div>
 
         <div className="conditions">
           <div className="col-6">
