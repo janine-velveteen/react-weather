@@ -1,5 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
+import Footer from "./Footer";
 
 import "./App.css";
 
@@ -10,14 +11,7 @@ function App() {
         <header className="App-header">
           <Weather defaultCity="Toronto" />
         </header>
-        <footer>
-          Life in the Clouds
-          <br />
-          <a href="https://github.com/janine-velveteen/react-weather">
-            Open-Sourced Code
-          </a>{" "}
-          by Janine Marsh
-        </footer>
+       <Footer />
       </div>
     </div>
   );
