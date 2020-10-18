@@ -21,7 +21,7 @@ export default function ForecastFiveHours(props) {
 
 
     return (
-        <div className="col">
+        <div className=" ForecastFiveHours col">
             
             {hours()}
             <WeatherIcon code={props.data.weather[0].icon} />

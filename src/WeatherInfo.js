@@ -39,10 +39,8 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
+      </div>
 
-      <section>
-        <div className="row five-hours"></div>
-      </section>
-    </div>
+    
   );
 }

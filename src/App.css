@@ -1,5 +1,5 @@
 .all {
-  height: 750px;
+  height: 680px;
   width: 750px;
   margin: 68px auto;
   background: linear-gradient(-225deg, #7085b6 0%, #87a7d9 50%, #def3f8 100%);
@@ -57,7 +57,7 @@ body {
 
 .five-hours {
   padding-top: 60px;
-  color: #000;
+  color: #212529;
 }
 
 .icons {
@@ -91,8 +91,7 @@ footer {
   margin: 10px;
 }
 
-canvas {
-  position: relative;
-  right: -70px;
+.WeatherInfo canvas {
+  right: -100px;
   bottom: -25px;
 }

@@ -14,11 +14,10 @@ export default function WeatherForecast(props) {
         setLoaded(true);
     }
     
-    if (loaded) {
+    if (loaded && props.city === forecast.city.name) {
         return (
             <div className="WeatherForecast row">
-                
-                    <ForecastFiveHours data={forecast.list[0]} />
+                <ForecastFiveHours data={forecast.list[0]} />
                 <ForecastFiveHours data={forecast.list[1]} />
                 <ForecastFiveHours data={forecast.list[2]} />
                 <ForecastFiveHours data={forecast.list[3]} />

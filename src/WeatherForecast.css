@@ -5,6 +5,6 @@
 }
 
 .WeatherForecast canvas {
-  display: block;
   color: #212529;
+  padding-top: 10px;
 }
