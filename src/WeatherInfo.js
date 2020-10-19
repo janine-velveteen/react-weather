@@ -21,9 +21,7 @@ export default function WeatherInfo(props) {
 
           <UnitConversion celsius={props.data.temperature} />
 
-          <div className="current-hi-low">
-            <strong>28°</strong>/<div>21°</div>
-          </div>
+          
           </div>
           </div>
 
